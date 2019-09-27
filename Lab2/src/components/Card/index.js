@@ -1,11 +1,11 @@
 import "./index.css";
 
-class Card {
+class Card1 {
  constructor(props) {
    this.props = props;
  }
   render() {
-    `<h1 class="title">${this.props.title}</h1>`;
+    `<h1 class="card">${this.props.card}</h1>`;
   }
 }
-export default Card;
+export default Card1;
