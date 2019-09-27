@@ -1,1 +1,9 @@
-
+{
+ "dependencies": {
+   "Webpack",
+   "WebPack-CLI",
+   "file-loader",
+   "style-loader",
+   "css-loader"
+ }
+}
