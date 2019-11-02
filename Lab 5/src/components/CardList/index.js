@@ -13,26 +13,16 @@ class Weather extends React.Component {
       temperatureUnit: "",
       details: ""
     };
-
-
   }
 
   componentDidMount() {
 
-    // Use window.fetch to retrieve data
-    // THEN convert the JSON into a JavaScript object
-    // THEN work on the result
 
     fetch("https://api.weather.gov/gridpoints/MLB/25,69/forecast")
     .then(res => res.json())
     .then((result) => {
-      // Save the "periods" returned by the data
+     
       let periods = result.properties.periods;
-
-      // Update the data using the first (0) data
-      // Retrieve the "temperature",
-      //  "temperatureUnit", and "detailedForecast"
-      //  properties of the object.
 
       this.setState({
 
@@ -43,11 +33,8 @@ class Weather extends React.Component {
 
       });
 
-
-
     })
     .catch((error) => {console.log(error)} );
-
   }
 
   render() {
